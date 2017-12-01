@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="824" started-at="2017-11-14T07:12:10Z" finished-at="2017-11-14T07:12:11Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="824" started-at="2017-11-14T07:12:10Z" finished-at="2017-11-14T07:12:11Z">
+      <class name="testDatabase.TC003_updateStudent">
+        <test-method status="PASS" signature="init()[pri:0, instance:testDatabase.TC003_updateStudent@475530b9]" name="init" is-config="true" duration-ms="463" started-at="2017-11-14T01:12:10Z" finished-at="2017-11-14T01:12:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="updateStudentDetails(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.util.List)[pri:0, instance:testDatabase.TC003_updateStudent@475530b9]" name="updateStudentDetails" duration-ms="0" started-at="2017-11-14T01:12:11Z" data-provider="studentsList" finished-at="2017-11-14T01:12:11Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.String[][] testDatabase.TC003_updateStudent.getData() must return either Object[][] or Object[] or Iterator<Object[]> or Iterator<Object>, not class [[Ljava.lang.String;]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.String[][] testDatabase.TC003_updateStudent.getData() must return either Object[][] or Object[] or Iterator<Object[]> or Iterator<Object>, not class [[Ljava.lang.String;
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:612)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1316)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1044)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1134)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:776)
+	at org.testng.TestRunner.run(TestRunner.java:634)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:425)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:420)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:385)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:334)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1318)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1243)
+	at org.testng.TestNG.runSuites(TestNG.java:1161)
+	at org.testng.TestNG.run(TestNG.java:1129)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateStudentDetails -->
+      </class> <!-- testDatabase.TC003_updateStudent -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

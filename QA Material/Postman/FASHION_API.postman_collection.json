@@ -1,0 +1,206 @@
+{
+	"id": "561605c3-c14b-9330-beb6-8968d9d9efa8",
+	"name": "FASHION_API",
+	"description": "",
+	"order": [
+		"d999e9fd-3b9b-6105-d7b6-e810f1e1a23d",
+		"c595b7a8-fb99-da5a-149b-c9da0700bc38",
+		"f48275cb-2733-bd9d-3b65-ae4af6e6b027",
+		"23365d42-2378-381d-db0c-4a3c6c24eb54",
+		"14cee3db-4921-bc8b-221e-3f106e40bfe6",
+		"ce2836f9-c9ea-22c0-3df5-5731a30c2c38"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1504590814991,
+	"owner": "2701147",
+	"public": false,
+	"requests": [
+		{
+			"id": "14cee3db-4921-bc8b-221e-3f106e40bfe6",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.fashionandyou.com/inventory/api/getInventory",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "561605c3-c14b-9330-beb6-8968d9d9efa8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "POST_InventoryDetails",
+			"description": "EndPoint: searching for a particular inventory, but the data is not there in data base so we got unable to get the data but our status is 200 (SUCCESS)\n\nhttp://www.fashionandyou.com/inventory/api/getInventory",
+			"descriptionFormat": "html",
+			"time": 1504594088588,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"sKUId\": 1351900}"
+		},
+		{
+			"id": "23365d42-2378-381d-db0c-4a3c6c24eb54",
+			"headers": "",
+			"headerData": [],
+			"url": "http://www.fashionandyou.com/search-new/product/jbsd/200000001688",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "561605c3-c14b-9330-beb6-8968d9d9efa8",
+			"data": null,
+			"dataMode": "params",
+			"name": "GET_WebShopId",
+			"description": "EndPoint: to get all the information for a particular webshopID\n\nhttp://www.fashionandyou.com/search-new/product/jbsd/200000001688",
+			"descriptionFormat": "html",
+			"time": 1504593142059,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "c595b7a8-fb99-da5a-149b-c9da0700bc38",
+			"headers": "",
+			"headerData": [],
+			"url": "http://www.fashionandyou.com/search-new/web/menu?ptype=all",
+			"queryParams": [
+				{
+					"key": "ptype",
+					"value": "all",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "561605c3-c14b-9330-beb6-8968d9d9efa8",
+			"data": null,
+			"dataMode": "params",
+			"name": "GET_MenuDetails",
+			"description": "EndPoint: for retrieve all menu items\n\nhttp://www.fashionandyou.com/search-new/web/menu?ptype=all",
+			"descriptionFormat": "html",
+			"time": 1504591935953,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "ce2836f9-c9ea-22c0-3df5-5731a30c2c38",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.fashionandyou.com/cartnew/api/addProduct",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "561605c3-c14b-9330-beb6-8968d9d9efa8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "POST_AddProduct",
+			"description": "EndPoint: for adding a product through api which is other option a part from ui\n\nhttp://www.fashionandyou.com/cartnew/api/addProduct",
+			"descriptionFormat": "html",
+			"time": 1504594325380,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"deviceId\":\"321192370548ec93dddcc91f85ab662f\",\n\t\"productRequest\":{\n\t\t\"webshopId\":200000001692,\n\t\t\"sellerSku\":{\n\t\t\t\"sKUId\":1351854\n\t\t},\n\t\t\"quantity\":1\n\t}\n}"
+		},
+		{
+			"id": "d999e9fd-3b9b-6105-d7b6-e810f1e1a23d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.fashionandyou.com/api/login/business?operationType=login",
+			"queryParams": [
+				{
+					"key": "operationType",
+					"value": "login",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "561605c3-c14b-9330-beb6-8968d9d9efa8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "POST",
+			"description": "EndPoint:\n\nhttp://www.fashionandyou.com/api/login/business?operationType=login\n",
+			"descriptionFormat": "html",
+			"time": 1504590816595,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"login\":{\n          \"loginId\":\"Info.bhanupratap@gmail.com\",\n          \"password\":\"password\",\n          \"loginSource\":\"APP\"\n}\n}"
+		},
+		{
+			"id": "f48275cb-2733-bd9d-3b65-ae4af6e6b027",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://www.fashionandyou.com/search-new/products",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "561605c3-c14b-9330-beb6-8968d9d9efa8",
+			"data": [],
+			"dataMode": "raw",
+			"name": "POST_ProductDetails",
+			"description": "EndPoint: for searching by eventId\n\nhttp://www.fashionandyou.com/search-new/products",
+			"descriptionFormat": "html",
+			"time": 1504592335240,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": " {\n      \"eventId\": \"2741\",\"from\":0,\"limit\":30\n       }"
+		}
+	]
+}

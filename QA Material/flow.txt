@@ -1,0 +1,159 @@
+harshini:
+
+1. client will give  ddrs - requirements (inscope , outscope of the project)
+2. developers  will code
+3. based on ddrs - test scripts (end to end process - regression testing) - diff scenarios (test cases) - selenium
+4. if we found any issues - ticket arises (instance) - jira
+5. if issue is resolved - status is reassigned (retest the ticket) - status update
+6. daily meeting (ba, test leads, devlopers)
+7. diff env - developing - pre environment(test) + pre production(end to end) - production(real time) - release
+stand up meeting - (team lead will be discussing the issues)
+
+pallavi:
+
+Aditya:
+1. socializing meeting (stake holders , ux designers, lead, dev, testers)- features which should be added is discussed
+2. backend - service call , devlopers - designing, wireframe - on selecting it should enable, testing - checks for correct flow
+3. bi-weekly sprint (features will be given) - developers will develop
+4.testers will be given that feature to test according to user story
+5. release time - ipt testing, uat
+6. qa sign off is done after all testing is done (2 features are getting buys - decide major or minor) - next releases  -lead will discuss with stake holders
+example - page loading is gng on  - input feilds are loaded when a user email is not getting 
+production defect backlog - bug came after release of the product.
+
+scrum master will discuss with ba and finalize the scope of the project
+scrum master - resources will be taken care 
+our meeting with scrum master - discuss the issues in jira board about our tasks. - status uat, ipt testing (testing scenarios will be 
+user story body ( i test based on acceptance criteria - ux will be giving wireframes, ui - develops the code)
+manager - scrum master - lead - developers
+at and t connect (or) webex  - 9:15am daily standup meetings
+
+developers will deploy in testing evironments
+
+Auto desk:
+
+1. similar to e-commerce site (products will be displayed) example - maya tools - users will be subscribed by paying money - 2d, 3d designing, construction,entertainment related tools.
+- users data and associated plans for that user
+
+ux - wireframes (designing) - font, colours - its like blue print (civil engineers, building contructions)
+behavioural round - challenging, value on your decision.
+
+harika:
+
+user story board - each story have diff acceptance criteria
+scrum meeting - are there are any blockers, status of tasks to be discussed 
+
+after developing - deploying 
+
+by-weekly sprint
+4 months ki release
+1. user story grooming - developer, product owner - doubts regarding sprints
+scrum master  - user story will be based on acceptance criteria (sizing - 5) - test data, automation scripts
+
+jenkins - job configuration
+
+rest calls - url will be given by passing the parameters and after getting response we have to validate the response
+
+
+challenging - id's will be changing frequently
+flow of the project will be changing - requirements will be changing (scripts will be failing) 
+uat - in terms of user
+
+coding standards
+
+
+
+pom - a design pattern to create object repo for web ui elements
+1. ui should be seperated from verification, so easy to understand
+2. object repo is independent of test cases. so, it is resuable and maintained
+
+Testng - ng (next generation)
+framework better than junit
+1. annotations are easier to understand
+2. test cases can be grouped
+3. parellel testing
+Support for data-driven testing (with @DataProvider).
+Flexible test configuration.
+Ability to re-execute failed test cases.
+
+selenium IDE - having a record and playback options which is present in every automation tool like qtp
+selenium rc - injects javascript into browsers when the page is loaded
+selenium webdriver - automation tool to test web apps in diff browsers using diff languages
+selenium grid- Selenium-Grid is used to speed up the execution of a test pass by using multiple machines to run tests in parallel. 
+selenium core-same like selenium webdriver but Selenium Core tests run directly in a browser
+
+emulators - android
+simulators - ios
+
+Http status codes
+200 - OK - success code
+201 - Created - Successfully created happened using POST/PUT
+400 - Bad Request 
+401 - Unauthorized-In response of missing token or invalid authentication.
+404 - Not Found-This error occurred when resource not found.
+500 - Internal Server Error-sually this happens when server is down.
+
+HP-Quality Center: (Test management tool) - it is gng to manage all testing operations
+we can place our requirements docs, test cases, any defects ,execution can also be done here in one common place and shared with team members
+So, any member when they perform any action they are logged with all the details- time and day
+
+JIRA - test management tool (bug and issue tracking, project management tool)
+
+API TESTING: BUSINESS LAYER (NOT GUI) - middle layer (giving request to the api and get response from them)
+
+approach of api testing:
+understand the scope and functionality
+apply testing techiques like 
+a) equivalence classes - placing all test cases into classes. (example no -1 to 1000 - here we can make 4 test cases) 
+b) boundary value analysis - next level of equivalense classes where test cases are selected at the edges of equivalence classes (stress and negative testing)
+c) error guessing (experinece comes into picture where mostly guessing will takes place in all kinds of scenarios)
+input parameters shoul be set properly
+execute the test cases and compare expected with actual values
+
+challenges in api level testing :
+1. testing parameter combinations - for communication will send data values to parameters and those parameters are like requests, here we have to carefully check the possible parameter combinations
+2.validating parameters - make sure that data values are within range and  data type
+3. sequencing the api calls - when multithreading applications it will become a problem because it should follow certain sequence in sending the requests
+4. no gui so difficult to give input values
+
+
+custom listners - failed test scripts - capturing screenshots through listner classes and attach to testng repoty
+parameterization in test ng - achieved through 
+1. parameters =  
+2. @data provider - for multiple suites - parellel testing ->we will supply 
+attribute and the returm type is 2d array object
+
+Parameterization is require to create Data Driven Testing.
+
+TestNG support two kinds of parameterization, using @Parameter+TestNG.xml and using @DataProvider
+In @Parameter+TestNG.xml parameters can be placed in suite level and test level. If
+The Same parameter name is declared in both places; test level parameter will get preference over suit level parameter.
+
+using @Parameter+TestNG.xml only one value can be set at a time, but @DataProvider return an 2d array of Object.
+If DataProvider is present in the different class then the class where the test method resides, DataProvider should be static method.
+There are two parameters supported by DataProvider are Method and ITestContext.
+
+project (10 mem)
+4- developers (1 lead) (after RA he will give knowledge transfer)
+3- testers (1 lead) (task is in high level document)
+RA (requirement analyst) ( he will give knowledge transfer first) - he will ensure that the project is gng acc to agile like iterations (2 weeks period)
+tso
+Project manager
+
+flow:
+RA prepares 1 and 2
+1- kick off meeting ( past of project and who all are involved in that)
+2- creating hld(high level design document) - this will be mentioned in story card
+high level story cards - large applications
+low level story cards - small appliations
+3-developers will take story cards and work - they will do unit testing and they will build in application whether it is working or not - code review - correct (sign off ) or false (comments and send it back) - local system
+development testing ( in real time - server environment)
+4-system testing - integration testing - stress testing (more load by giving large amounts of input ex-10,000) -acceptance testing (BA)
+5- take production date (gng live)
+
+TDD - JUnit (unit testing framework) - it is done repeatedly for the source code by developers. and if anything goes wrong then revert back and implement untill it becomes perfect. the concept behind this is that whether each unit is functionally working as expected
+BDD - 
+ATDD -
+
+
+challenges in POM framework:
